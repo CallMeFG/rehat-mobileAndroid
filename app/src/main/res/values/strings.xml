@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Rehat</string>
+    <string name="app_slogan">Jeda sebentar, lanjut lebih kuat.</string>
+    <string name="app_versi">Versi 1.0</string>
+    <string name="cd_logo">Logo aplikasi Rehat</string>
+    <string name="toolbar_subtitle">Asisten anti-burnout mahasiswa</string>
+
+    <!-- Login -->
+    <string name="login_judul">Masuk ke Rehat</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="login_gagal_judul">Login Gagal</string>
+    <string name="login_gagal_pesan">Silahkan coba lagi</string>
+    <string name="ok">OK</string>
+
+    <!-- Logout -->
+    <string name="logout_judul">Logout</string>
+    <string name="logout_pesan">Apakah Anda yakin ingin keluar?</string>
+    <string name="ya">Ya</string>
+    <string name="batal">Batal</string>
+
+    <!-- navigasi -->
+    <string name="menu_beranda">Beranda</string>
+    <string name="menu_fokus">Fokus</string>
+    <string name="menu_pulih">Pulih</string>
+    <string name="menu_laporan">Laporan</string>
+    <string name="menu_profil">Profil</string>
+
+    <!-- Option menu -->
+    <string name="menu_bantuan">Bantuan (Healing119)</string>
+    <string name="menu_logout">Logout</string>
+
+    <!-- Isi sementara tiap halaman -->
+    <string name="beranda_desc">Baterai energi, ringkasan tidur, dan rekomendasi harian akan tampil di sini.</string>
+    <string name="fokus_desc">Timer fokus–jeda akan tampil di sini.</string>
+    <string name="pulih_desc">Latihan napas, peregangan, power nap, dan Mode Tidur akan tampil di sini.</string>
+    <string name="laporan_desc">Grafik mingguan dan prediksi risiko burnout akan tampil di sini.</string>
+    <string name="profil_label_username">Username</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Atur Jeda Rehat -->
+    <string name="atur_jeda_judul">Atur Jeda Rehat</string>
+    <string name="atur_jeda_tombol">Atur Jeda Rehat</string>
+    <string name="atur_jeda_hint_catatan">Catatan perasaan hari ini</string>
+    <string name="atur_jeda_btn_mulai">Mulai Jeda</string>
+    <string name="atur_jeda_chip_5">5 Menit</string>
+    <string name="atur_jeda_chip_15">15 Menit</string>
+    <string name="atur_jeda_chip_30">30 Menit</string>
+    <string name="atur_jeda_hint_telepon">Nomor Telepon Teman Cerita</string>
+    <string name="atur_jeda_menu_napas">Napas</string>
+    <string name="atur_jeda_menu_peregangan">Peregangan</string>
+    <string name="atur_jeda_menu_power_nap">Power Nap</string>
+    <string name="atur_jeda_menu_jalan">Jalan Santai</string>
+    <string name="atur_jeda_menu_musik">Musik Tenang</string>
+    <string name="atur_jeda_menu_jurnal">Jurnal Syukur</string>
+
+    <!-- teks di Tutorial Screen fitur Laporan -->
+    <string name="menu_tutorial">Tutorial</string>
+    <string name="tutorial1_judul">Selamat Datang di Fitur Laporan!</string>
+    <string name="tutorial1_desc">Laporan merangkum kondisi energimu setiap hari selama seminggu, lengkap dengan catatan singkat dan skor.</string>
+    <string name="tutorial2_judul">Ketuk untuk Melihat Skor!</string>
+    <string name="tutorial2_desc">Setiap baris menampilkan hari, catatan kondisi, dan skor energi. Ketuk salah satu baris untuk melihat skor hari itu. Skor tinggi berarti energimu terjaga.</string>
+    <string name="tutorial3_judul">Pantau Risiko Burnout</string>
+    <string name="tutorial3_desc">Baris Rata-rata meringkas risiko burnout minggu ini. Bila skor terus turun, buka tab Pulih dan ambil jeda sebelum lanjut belajar.</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Palet warna grand design -->
+    <color name="dusk_indigo">#4A4E9E</color>
+    <color name="twilight_purple">#7B6CC0</color>
+    <color name="midnight_blue">#1E1F4B</color>
+    <color name="starlight_yellow">#F7C548</color>
+    <color name="mint_green">#5CBF8F</color>
+    <color name="soft_coral">#F07A6A</color>
+    <color name="lavender_mist">#F4F3FB</color>
+
+    <!-- warna untuk Tutorial Screen dan DotsIndicator -->
+    <color name="tutorial_blue">#64B5F6</color>
+    <color name="tutorial_green">#AED581</color>
+    <color name="tutorial_teal">#4DB6AC</color>
+    <color name="abu_gelap">#5F6368</color>
+    <color name="dot_selected">#211C1C</color>
+</resources>

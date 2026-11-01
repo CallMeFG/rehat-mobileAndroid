@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo Rehat: baterai + bulan sabit + bintang (sesuai grand design) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Latar kotak membulat (Twilight Purple) -->
+    <path
+        android:fillColor="#7B6CC0"
+        android:pathData="M26,0 H94 A26,26 0 0,1 120,26 V94 A26,26 0 0,1 94,120 H26 A26,26 0 0,1 0,94 V26 A26,26 0 0,1 26,0 Z" />
+
+    <!-- Badan baterai -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="7"
+        android:pathData="M34,40 H78 A12,12 0 0,1 90,52 V70 A12,12 0 0,1 78,82 H34 A12,12 0 0,1 22,70 V52 A12,12 0 0,1 34,40 Z" />
+
+    <!-- Kutub baterai -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M95,52 H97.5 A3.5,3.5 0 0,1 101,55.5 V66.5 A3.5,3.5 0 0,1 97.5,70 H95 Z" />
+
+    <!-- Bulan sabit (Starlight Yellow) -->
+    <path
+        android:fillColor="#F7C548"
+        android:pathData="M53.17,48.31 A13,13 0 1,0 68.69,63.83 A11,11 0 0,1 53.17,48.31 Z" />
+
+    <!-- Bintang kecil -->
+    <path
+        android:fillColor="#F7C548"
+        android:pathData="M94,14 Q95.6,23.4 105,25 Q95.6,26.6 94,36 Q92.4,26.6 83,25 Q92.4,23.4 94,14 Z" />
+</vector>

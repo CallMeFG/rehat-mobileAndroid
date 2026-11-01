@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".halaman.ProfilFragment">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/outfit_bold"
+        android:text="@string/menu_profil"
+        android:textColor="@color/starlight_yellow"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabelUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/outfit_regular"
+        android:text="@string/profil_label_username"
+        android:textColor="@color/lavender_mist"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvJudul"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
+
+    <!-- username dari SharedPreferences -->
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_semibold"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/tvJudul"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelUsername"
+        tools:text="rizky" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

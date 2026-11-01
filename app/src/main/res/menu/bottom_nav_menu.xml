@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- menu Bottom Navigation, android:id sama dengan R.id.navXxx di MainActivity -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navBeranda"
+        android:icon="@drawable/ic_nav_beranda"
+        android:title="@string/menu_beranda" />
+    <item
+        android:id="@+id/navFokus"
+        android:icon="@drawable/ic_nav_fokus"
+        android:title="@string/menu_fokus" />
+    <item
+        android:id="@+id/navPulih"
+        android:icon="@drawable/ic_nav_pulih"
+        android:title="@string/menu_pulih" />
+    <item
+        android:id="@+id/navLaporan"
+        android:icon="@drawable/ic_nav_laporan"
+        android:title="@string/menu_laporan" />
+    <item
+        android:id="@+id/navProfil"
+        android:icon="@drawable/ic_nav_profil"
+        android:title="@string/menu_profil" />
+</menu>
