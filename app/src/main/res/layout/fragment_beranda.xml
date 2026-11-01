@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Beranda: baterai energi, ringkasan hari ini, rekomendasi (grand design halaman 1) -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".halaman.BerandaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- MaterialCardView baterai energi (Modul P4 hlm 15-17) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardBateraiEnergi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/midnight_blue"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:strokeColor="@color/starlight_yellow"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvLabelBaterai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beranda_label_baterai"
+                    android:textColor="@color/lavender_mist"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvStatusEnergi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/beranda_status_kosong"
+                    android:textColor="@color/starlight_yellow"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabelBaterai" />
+
+                <TextView
+                    android:id="@+id/tvPersenEnergi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/beranda_persen_kosong"
+                    android:textColor="@color/white"
+                    android:textSize="44sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvPesanEnergi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/beranda_pesan_kosong"
+                    android:textColor="@color/lavender_mist"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPersenEnergi" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ringkasan hari ini: 3 kartu kecil dalam GridLayout 3 kolom (Modul P9 hlm 12-13) -->
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridRingkasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:columnCount="3"
+            app:useDefaultMargins="true">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTidur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/twilight_purple"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tvNilaiTidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_bold"
+                        android:text="@string/strip"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/beranda_label_tidur"
+                        android:textColor="@color/lavender_mist"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTugas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/twilight_purple"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tvNilaiTugas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_bold"
+                        android:text="@string/strip"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/beranda_label_tugas"
+                        android:textColor="@color/lavender_mist"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardFokus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/twilight_purple"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tvNilaiFokus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_bold"
+                        android:text="@string/strip"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/beranda_label_fokus"
+                        android:textColor="@color/lavender_mist"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.gridlayout.widget.GridLayout>
+
+        <!-- tugas terdekat dari Catatan Harian -->
+        <TextView
+            android:id="@+id/tvTugasTerdekat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/beranda_tugas_terdekat_kosong"
+            android:textColor="@color/lavender_mist"
+            android:textSize="14sp" />
+
+        <!-- tombol ke CatatanHarianActivity -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIsiCatatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/starlight_yellow"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="@string/beranda_btn_isi_catatan"
+            android:textColor="@color/midnight_blue"
+            app:icon="@drawable/ic_tulis_catatan"
+            app:iconTint="@color/midnight_blue" />
+
+        <TextView
+            android:id="@+id/tvJudulRekomendasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/outfit_bold"
+            android:text="@string/beranda_judul_rekomendasi"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <!-- rekomendasi 1: aktivitas -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardRekomendasiAktivitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/lavender_mist"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/twilight_purple"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvRekomendasiJudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="@string/beranda_rek_aktivitas_judul"
+                    android:textColor="@color/midnight_blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRekomendasiIsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/beranda_rek_aktivitas_isi"
+                    android:textColor="@color/dusk_indigo"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- rekomendasi 2: jam tidur -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardRekomendasiTidur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/lavender_mist"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/twilight_purple"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvTidurJudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="@string/beranda_rek_tidur_judul"
+                    android:textColor="@color/midnight_blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTidurIsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/beranda_rek_tidur_isi"
+                    android:textColor="@color/dusk_indigo"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Palet warna grand design -->
+    <color name="dusk_indigo">#4A4E9E</color>
+    <color name="twilight_purple">#7B6CC0</color>
+    <color name="midnight_blue">#1E1F4B</color>
+    <color name="starlight_yellow">#F7C548</color>
+    <color name="mint_green">#5CBF8F</color>
+    <color name="soft_coral">#F07A6A</color>
+    <color name="lavender_mist">#F4F3FB</color>
+
+    <!-- warna Panduan Rehat: langit malam makin terang di setiap langkah -->
+    <color name="panduan_langit_1">#23255C</color>
+    <color name="panduan_langit_2">#2E306F</color>
+    <color name="panduan_langit_3">#393A83</color>
+    <color name="panduan_langit_4">#454596</color>
+    <color name="titik_panduan">#9C98C9</color>
+    <color name="titik_panduan_aktif">#F7C548</color>
+</resources>

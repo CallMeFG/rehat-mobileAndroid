@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Sama persis dengan values/themes.xml: Rehat selalu bernuansa langit malam,
+         jadi mode gelap HP tidak boleh mengganti warna dan font -->
+    <style name="Base.Theme.Project_Mobile_Rzky" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/dusk_indigo</item>
+        <item name="colorSecondary">@color/twilight_purple</item>
+        <item name="fontFamily">@font/outfit_regular</item>
+        <item name="android:fontFamily">@font/outfit_regular</item>
+    </style>
+</resources>

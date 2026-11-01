@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Disamakan dengan mode terang supaya warna Rehat tetap konsisten -->
+    <style name="Base.Theme.Project_Mobile_Rzky" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/dusk_indigo</item>
+        <item name="colorSecondary">@color/twilight_purple</item>
+        <item name="fontFamily">@font/outfit_regular</item>
+        <item name="android:fontFamily">@font/outfit_regular</item>
+    </style>
+</resources>

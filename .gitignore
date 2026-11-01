@@ -1,0 +1,22 @@
+# Build dan cache Gradle/Kotlin
+*.iml
+.gradle/
+.kotlin/
+/build/
+/app/build/
+/captures/
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+
+# Konfigurasi lokal dan IDE
+local.properties
+.idea/
+.DS_Store
+
+# Kebutuhan AI, dokumen, dan materi kuliah (bukan kode aplikasi)
+CLAUDE.md
+.claude/
+docs/
+modul/

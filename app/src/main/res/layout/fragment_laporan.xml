@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Laporan: ringkasan mingguan + risiko burnout (grand design halaman 4) -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".halaman.LaporanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvJudulLaporan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_bold"
+            android:text="@string/laporan_judul"
+            android:textColor="@color/starlight_yellow"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvTujuanLaporan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/laporan_tujuan"
+            android:textColor="@color/lavender_mist"
+            android:textSize="14sp" />
+
+        <!-- tiga angka ringkasan (GridLayout 3 kolom + MaterialCardView) -->
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridRingkasanMingguan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:columnCount="3"
+            app:useDefaultMargins="true">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardRataTidur"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/twilight_purple"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tvRataTidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_bold"
+                        android:text="@string/strip"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/laporan_label_rata_tidur"
+                        android:textColor="@color/lavender_mist"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardRataEnergi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/twilight_purple"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tvRataEnergi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_bold"
+                        android:text="@string/strip"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/laporan_label_rata_energi"
+                        android:textColor="@color/lavender_mist"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTotalFokus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/twilight_purple"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tvTotalFokus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_bold"
+                        android:text="@string/strip"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/laporan_label_total_fokus"
+                        android:textColor="@color/lavender_mist"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.gridlayout.widget.GridLayout>
+
+        <!-- risiko burnout -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardRisikoBurnout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/midnight_blue"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:strokeColor="@color/soft_coral"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/laporan_label_risiko"
+                    android:textColor="@color/lavender_mist"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvStatusRisiko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/strip"
+                    android:textColor="@color/soft_coral"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/tvAlasanRisiko"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/strip"
+                    android:textColor="@color/lavender_mist"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCekBurnout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/starlight_yellow"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="@string/laporan_btn_cek_burnout"
+            android:textColor="@color/midnight_blue" />
+
+        <!-- tombol ke LaporanMingguanActivity (TabLayout + RecyclerView) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLihatLaporanHarian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/twilight_purple"
+            android:fontFamily="@font/outfit_semibold"
+            android:text="@string/laporan_btn_lihat_harian"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_tab_riwayat" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

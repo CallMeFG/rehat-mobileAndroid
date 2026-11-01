@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fokus: timer fokus–jeda + saran aktivitas jeda (grand design halaman 2) -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".halaman.FokusFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvJudulFokus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/outfit_bold"
+            android:text="@string/fokus_judul"
+            android:textColor="@color/starlight_yellow"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvTujuanFokus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/fokus_tujuan"
+            android:textColor="@color/lavender_mist"
+            android:textSize="14sp" />
+
+        <!-- pilihan mode (ChipGroup, Modul P9 hlm 8-9) -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupModeFokus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipModeFokus"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/fokus_mode_fokus" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipModeJeda"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fokus_mode_jeda" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipModeJedaPanjang"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fokus_mode_jeda_panjang" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- kartu timer (MaterialCardView, Modul P4 hlm 15-17) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTimerFokus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/midnight_blue"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:strokeColor="@color/starlight_yellow"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/tvSesiKe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fokus_sesi_awal"
+                    android:textColor="@color/lavender_mist"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvSisaWaktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_bold"
+                    android:text="@string/fokus_waktu_awal"
+                    android:textColor="@color/white"
+                    android:textSize="64sp" />
+
+                <TextView
+                    android:id="@+id/tvStatusTimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fokus_status_siap"
+                    android:textColor="@color/starlight_yellow"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTugasSedang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="@string/fokus_tugas_kosong"
+                    android:textColor="@color/lavender_mist"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- tombol Mulai dan Berhenti (GridLayout 2 kolom, Modul P9 hlm 12-13) -->
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridTombolTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:columnCount="2"
+            app:useDefaultMargins="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMulaiTimer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/starlight_yellow"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="@string/fokus_btn_mulai"
+                android:textColor="@color/midnight_blue"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBerhentiTimer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/twilight_purple"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="@string/fokus_btn_berhenti"
+                android:textColor="@color/white"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill_horizontal" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <!-- total sesi fokus -->
+        <TextView
+            android:id="@+id/tvRingkasanFokus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/fokus_ringkasan_kosong"
+            android:textColor="@color/lavender_mist"
+            android:textSize="14sp" />
+
+        <!-- saran aktivitas saat jeda -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSaranJeda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/lavender_mist"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/twilight_purple"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/outfit_semibold"
+                    android:text="@string/fokus_saran_judul"
+                    android:textColor="@color/midnight_blue"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/fokus_saran_minum"
+                    android:textColor="@color/dusk_indigo"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/fokus_saran_mata"
+                    android:textColor="@color/dusk_indigo"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/fokus_saran_regang"
+                    android:textColor="@color/dusk_indigo"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

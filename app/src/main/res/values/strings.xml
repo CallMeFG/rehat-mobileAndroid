@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">Rehat</string>
+    <string name="app_slogan">Jeda sebentar, lanjut lebih kuat.</string>
+    <string name="app_versi">Versi 1.0</string>
+    <string name="cd_logo">Logo aplikasi Rehat</string>
+    <string name="toolbar_subtitle">Asisten anti-burnout mahasiswa</string>
+
+    <!-- Login -->
+    <string name="login_judul">Masuk ke Rehat</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="login_gagal_judul">Login Gagal</string>
+    <string name="login_gagal_pesan">Silahkan coba lagi</string>
+    <string name="ok">OK</string>
+
+    <!-- Logout -->
+    <string name="logout_judul">Logout</string>
+    <string name="logout_pesan">Apakah Anda yakin ingin keluar?</string>
+    <string name="ya">Ya</string>
+    <string name="batal">Batal</string>
+
+    <!-- navigasi -->
+    <string name="menu_beranda">Beranda</string>
+    <string name="menu_fokus">Fokus</string>
+    <string name="menu_pulih">Pulih</string>
+    <string name="menu_laporan">Laporan</string>
+    <string name="menu_profil">Profil</string>
+
+    <!-- Option menu -->
+    <string name="menu_bantuan">Bantuan (Healing119)</string>
+    <string name="menu_logout">Logout</string>
+
+    <!-- Isi sementara tiap halaman -->
+
+    <!-- Beranda -->
+    <string name="strip">–</string>
+    <string name="menu_panduan">Panduan</string>
+    <string name="beranda_label_baterai">Baterai energi hari ini</string>
+    <string name="beranda_status_kosong">Belum dihitung</string>
+    <string name="beranda_persen_kosong">––%</string>
+    <string name="beranda_pesan_kosong">Isi Catatan Harian agar Rehat bisa menghitung baterai energimu dan menyarankan kapan fokus, jeda, dan tidur.</string>
+    <string name="beranda_label_tidur">Tidur semalam</string>
+    <string name="beranda_label_tugas">Tugas hari ini</string>
+    <string name="beranda_label_fokus">Waktu fokus</string>
+    <string name="beranda_tugas_terdekat_kosong">Tugas terdekat: belum diisi</string>
+    <string name="beranda_btn_isi_catatan">Isi Catatan Harian</string>
+    <string name="beranda_btn_perbarui_catatan">Perbarui Catatan Harian</string>
+    <string name="beranda_judul_rekomendasi">Rekomendasi untukmu</string>
+    <string name="beranda_rek_aktivitas_judul">Belum ada rekomendasi</string>
+    <string name="beranda_rek_aktivitas_isi">Rekomendasi aktivitas muncul setelah Catatan Harian disimpan.</string>
+    <string name="beranda_rek_tidur_judul">Target tidur pukul 23.00</string>
+    <string name="beranda_rek_tidur_isi">Tidur 7–8 jam menjaga baterai energi tetap penuh untuk kuliah besok.</string>
+
+    <!-- Fokus -->
+    <string name="fokus_judul">Sesi Fokus</string>
+    <string name="fokus_tujuan">Pilih mode lalu ketuk Mulai. Fokus 25 menit, lalu jeda 5 menit. Setiap 4 sesi fokus, ambil jeda panjang 15 menit agar energi tidak terkuras.</string>
+    <string name="fokus_mode_fokus">Fokus 25m</string>
+    <string name="fokus_mode_jeda">Jeda 5m</string>
+    <string name="fokus_mode_jeda_panjang">Jeda panjang 15m</string>
+    <string name="fokus_sesi_awal">Sesi 1 dari 4</string>
+    <string name="fokus_waktu_awal">25:00</string>
+    <string name="fokus_status_siap">Siap dimulai</string>
+    <string name="fokus_status_fokus">Sedang fokus, jauhkan ponsel</string>
+    <string name="fokus_status_jeda">Sedang jeda, istirahatkan mata</string>
+    <string name="fokus_status_berhenti">Timer dihentikan</string>
+    <string name="fokus_tugas_kosong">Sedang dikerjakan: belum diisi</string>
+    <string name="fokus_btn_mulai">Mulai</string>
+    <string name="fokus_btn_berhenti">Berhenti</string>
+    <string name="fokus_ringkasan_kosong">Total: 0 sesi fokus · 0 menit</string>
+    <string name="fokus_saran_judul">Saat jeda nanti, coba:</string>
+    <string name="fokus_saran_minum">• Minum segelas air putih</string>
+    <string name="fokus_saran_mata">• Lihat benda jauh selama 20 detik</string>
+    <string name="fokus_saran_regang">• Peregangan leher dan bahu</string>
+    <string name="fokus_selesai_judul">Sesi fokus selesai</string>
+
+    <!-- Ruang Pulih -->
+    <string name="pulih_judul">Ruang Pulih</string>
+    <string name="pulih_tujuan">Isi ulang energi pelan-pelan. Ketuk kartu latihan untuk melihat langkahnya, lakukan, lalu ketuk Selesai agar tercatat sebagai sesi pulih.</string>
+    <string name="pulih_label_disarankan">DISARANKAN</string>
+    <string name="pulih_napas_judul">Latihan napas 4-7-8</string>
+    <string name="pulih_napas_isi">Tarik 4 detik, tahan 7, buang 8. Bantu tubuh lebih tenang sebelum belajar atau tidur.</string>
+    <string name="pulih_btn_mulai_napas">Mulai · 3 menit</string>
+    <string name="pulih_judul_latihan">Latihan singkat</string>
+    <string name="pulih_peregangan">Peregangan</string>
+    <string name="pulih_power_nap">Power nap</string>
+    <string name="pulih_jalan_santai">Jalan santai</string>
+    <string name="pulih_suara_hujan">Suara hujan</string>
+    <string name="pulih_durasi_5">5 menit</string>
+    <string name="pulih_durasi_10">10 menit</string>
+    <string name="pulih_durasi_15">15 menit</string>
+    <string name="pulih_durasi_20">20 menit</string>
+    <string name="pulih_ringkasan_kosong">Total sesi pulih: 0</string>
+    <string name="pulih_langkah_napas">1. Duduk tegak, letakkan ujung lidah di belakang gigi atas.\n2. Tarik napas lewat hidung selama 4 hitungan.\n3. Tahan napas selama 7 hitungan.\n4. Buang napas lewat mulut selama 8 hitungan.\n5. Ulangi 4 kali (sekitar 3 menit), lalu ketuk Selesai.</string>
+    <string name="pulih_langkah_peregangan">1. Berdiri dan jauhkan diri dari layar.\n2. Miringkan kepala ke kanan dan kiri, tahan masing-masing 15 detik.\n3. Putar bahu ke belakang 10 kali.\n4. Tautkan jari, angkat tangan ke atas, tahan 20 detik.\n5. Ulangi sampai 5 menit, lalu ketuk Selesai.</string>
+    <string name="pulih_langkah_power_nap">1. Pasang alarm 20 menit agar tidak tertidur terlalu lama.\n2. Berbaring atau bersandar di tempat yang tenang.\n3. Tutup mata dan atur napas pelan.\n4. Saat alarm berbunyi, langsung bangun dan minum air.\n5. Ketuk Selesai.</string>
+    <string name="pulih_langkah_jalan">1. Simpan ponsel di saku.\n2. Keluar ruangan dan berjalan santai 10 menit.\n3. Perhatikan lima benda di sekitarmu agar pikiran beristirahat dari tugas.\n4. Kembali, minum air, lalu ketuk Selesai.</string>
+    <string name="pulih_langkah_suara_hujan">1. Putar suara hujan dengan volume pelan.\n2. Pejamkan mata dan dengarkan selama 15 menit.\n3. Jika pikiran melayang ke tugas, kembalikan fokus ke suara hujan.\n4. Ketuk Selesai saat sudah merasa lebih tenang.</string>
+    <string name="pulih_mode_tidur_judul">Mode Tidur · 23.00</string>
+    <string name="pulih_mode_tidur_isi">Mulai 30 menit sebelum tidur. Ketuk persiapan yang sudah kamu lakukan:</string>
+    <string name="pulih_tidur_notifikasi">Matikan notifikasi media sosial</string>
+    <string name="pulih_tidur_redupkan">Redupkan layar dan lampu kamar</string>
+    <string name="pulih_tidur_jauhkan_hp">Simpan HP jauh dari kasur</string>
+    <string name="pulih_tidur_progres_awal">0 dari 3 persiapan tidur selesai</string>
+
+    <!-- Laporan -->
+    <string name="laporan_judul">Laporan Mingguan</string>
+    <string name="laporan_tujuan">Ringkasan 8 hari terakhir untuk melihat apakah energimu menurun. Baris Hari ini berasal dari Catatan Harianmu; tujuh hari sebelumnya adalah data contoh.</string>
+    <string name="laporan_label_rata_tidur">rata-rata tidur</string>
+    <string name="laporan_label_rata_energi">rata-rata energi</string>
+    <string name="laporan_label_total_fokus">total fokus</string>
+    <string name="laporan_label_risiko">Risiko burnout minggu ini</string>
+    <string name="laporan_btn_cek_burnout">Cek burnout sekarang</string>
+    <string name="laporan_btn_lihat_harian">Lihat Riwayat Harian &amp; Penyebab Lelah</string>
+    <string name="laporan_mingguan_judul">Laporan Mingguan</string>
+    <string name="laporan_mingguan_subjudul">Riwayat harian dan penyebab lelah</string>
+    <string name="tab_riwayat_harian">Riwayat Harian</string>
+    <string name="tab_penyebab_lelah">Penyebab Lelah</string>
+    <string name="riwayat_keterangan">Ketuk satu hari untuk melihat detail baterai energi dan saran untuk hari berikutnya.</string>
+    <string name="penyebab_keterangan">Jumlah hari setiap penyebab muncul di riwayat, beserta cara mengatasinya. Ketuk kartu untuk membaca saran.</string>
+
+    <!-- Profil -->
+    <string name="nol">0</string>
+    <string name="cd_foto_profil">Foto profil</string>
+    <string name="profil_keterangan">Mahasiswa · pengguna Rehat</string>
+    <string name="profil_label_sesi_fokus">Sesi fokus</string>
+    <string name="profil_label_sesi_pulih">Sesi pulih</string>
+    <string name="profil_label_catatan">Catatan hari ini</string>
+    <string name="profil_catatan_belum">Belum</string>
+    <string name="profil_catatan_sudah">Sudah</string>
+    <string name="profil_healing_judul">Butuh teman bicara?</string>
+    <string name="profil_healing_isi">Healing119 · telepon 119 ext 8, gratis. Ketuk kartu ini untuk membuka situs layanannya.</string>
+
+    <!-- Catatan Harian -->
+    <string name="catatan_judul">Catatan Harian</string>
+    <string name="catatan_subjudul">Hitung baterai energi hari ini</string>
+    <string name="catatan_tujuan">Jawab pertanyaan di bawah, lalu ketuk Simpan Catatan. Rehat menghitung baterai energimu dari jawaban 1–3 dan menampilkannya di Beranda.</string>
+    <string name="catatan_tanya_tidur">1. Berapa lama kamu tidur semalam?</string>
+    <string name="catatan_tidur_kurang">Kurang dari 5 jam</string>
+    <string name="catatan_tidur_sedang">5–7 jam</string>
+    <string name="catatan_tidur_cukup">Lebih dari 7 jam</string>
+    <string name="catatan_tanya_tugas">2. Berapa tugas yang harus selesai hari ini?</string>
+    <string name="catatan_tugas_ringan">0–1 tugas</string>
+    <string name="catatan_tugas_sedang">2–3 tugas</string>
+    <string name="catatan_tugas_berat">4 tugas atau lebih</string>
+    <string name="catatan_tanya_energi">3. Bagaimana energimu sekarang?</string>
+    <string name="catatan_energi_lelah">Lelah</string>
+    <string name="catatan_energi_biasa">Biasa</string>
+    <string name="catatan_energi_segar">Segar</string>
+    <string name="catatan_tanya_penyebab">4. Apa yang paling menguras energimu hari ini?</string>
+    <string name="penyebab_deadline">Deadline</string>
+    <string name="penyebab_begadang">Begadang</string>
+    <string name="penyebab_organisasi">Organisasi</string>
+    <string name="penyebab_kuliah">Kuliah padat</string>
+    <string name="penyebab_pribadi">Urusan pribadi</string>
+    <string name="penyebab_tidak_ada">Tidak ada</string>
+    <string name="catatan_penyebab_belum">Dipilih: belum ada</string>
+    <string name="catatan_hint_tugas_terdekat">Tugas terdekat</string>
+    <string name="catatan_helper_tugas_terdekat">Contoh: Laporan Basis Data. Tampil di Beranda dan Fokus.</string>
+    <string name="catatan_hint_perasaan">Tulis singkat perasaanmu hari ini (boleh dikosongkan)</string>
+    <string name="catatan_btn_simpan">Simpan Catatan</string>
+    <string name="catatan_belum_lengkap_judul">Catatan belum lengkap</string>
+    <string name="catatan_belum_lengkap_pesan">Pilih satu jawaban untuk pertanyaan 1, 2, dan 3 agar baterai energi bisa dihitung.</string>
+
+    <!-- Panduan Rehat (ViewPager2): langkah cara memakai fitur -->
+    <string name="panduan_btn_lewati">Lewati panduan</string>
+    <string name="panduan_btn_mulai">Mulai Pakai Rehat</string>
+    <string name="panduan_catatan_langkah_ke">LANGKAH 1 DARI 4 · BERANDA</string>
+    <string name="panduan_catatan_judul">Isi Catatan Harian</string>
+    <string name="panduan_catatan_langkah">1. Buka tab Beranda, lalu ketuk tombol Isi Catatan Harian.
+2. Pilih lama tidurmu semalam, jumlah tugas hari ini, dan energimu sekarang.
+3. Ketuk penyebab yang paling menguras energimu.
+4. Tulis tugas terdekat, lalu ketuk Simpan Catatan.</string>
+    <string name="panduan_catatan_hasil">Hasilnya: baterai energi dan rekomendasi di Beranda langsung diperbarui.</string>
+    <string name="panduan_fokus_langkah_ke">LANGKAH 2 DARI 4 · FOKUS</string>
+    <string name="panduan_fokus_judul">Mulai Sesi Fokus</string>
+    <string name="panduan_fokus_langkah">1. Buka tab Fokus.
+2. Pilih Fokus 25m, lalu ketuk Mulai. Jauhkan ponsel sampai waktu habis.
+3. Saat muncul pemberitahuan sesi selesai, pilih Jeda 5m lalu ketuk Mulai.
+4. Setelah 4 sesi fokus, pilih Jeda panjang 15m.</string>
+    <string name="panduan_fokus_hasil">Hasilnya: jumlah sesi dan waktu fokus tercatat di Beranda, Laporan, dan Profil.</string>
+    <string name="panduan_pulih_langkah_ke">LANGKAH 3 DARI 4 · PULIH</string>
+    <string name="panduan_pulih_judul">Isi Ulang di Ruang Pulih</string>
+    <string name="panduan_pulih_langkah">1. Buka tab Pulih saat baterai energi Rendah atau setelah sesi fokus.
+2. Ketuk Mulai · 3 menit pada Napas 4-7-8, atau ketuk salah satu kartu latihan.
+3. Ikuti langkah yang muncul, lalu ketuk Selesai.
+4. Malam hari, ketuk tiga persiapan di kartu Mode Tidur.</string>
+    <string name="panduan_pulih_hasil">Hasilnya: sesi pulih bertambah dan muncul konfirmasi di bawah layar.</string>
+    <string name="panduan_laporan_langkah_ke">LANGKAH 4 DARI 4 · LAPORAN</string>
+    <string name="panduan_laporan_judul">Baca Laporan Mingguan</string>
+    <string name="panduan_laporan_langkah">1. Buka tab Laporan untuk melihat rata-rata tidur, energi, dan risiko burnout.
+2. Ketuk Lihat Riwayat Harian &amp; Penyebab Lelah.
+3. Di tab Riwayat Harian, ketuk satu hari untuk melihat detail dan saran.
+4. Geser ke tab Penyebab Lelah untuk membaca cara mengatasinya.</string>
+    <string name="panduan_laporan_hasil">Jika risiko Tinggi, ketuk Cek burnout sekarang untuk menghubungi Healing119.</string>
+</resources>
