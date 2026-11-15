@@ -1,6 +1,6 @@
 package com.example.project_mobile_rzky.halaman.laporan
 
-// data class satu hari catatan untuk RecyclerView (Modul P10 hlm 12 | prak: ProductModel.kt)
+// data class satu hari catatan untuk RecyclerView
 data class RiwayatHarianModel(
     val hari: String,
     val tanggal: String,

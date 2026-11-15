@@ -11,7 +11,6 @@ import com.example.project_mobile_rzky.R
 import com.example.project_mobile_rzky.databinding.FragmentRiwayatHarianBinding
 
 // Tab 1 Laporan Mingguan: daftar riwayat harian dengan RecyclerView
-// (Modul P10 hlm 11-15 | prak: TabCFragment.kt)
 class RiwayatHarianFragment : Fragment() {
 
     private var _binding: FragmentRiwayatHarianBinding? = null
@@ -30,7 +29,7 @@ class RiwayatHarianFragment : Fragment() {
 
         val riwayatList = RiwayatHarianData(requireContext()).ambilRiwayat()
 
-        // adapter menerima lambda: aksi klik ditentukan di Fragment (Modul P10 hlm 14)
+        // adapter menerima lambda: aksi klik ditentukan di Fragment
         val riwayatAdapter = RiwayatHarianAdapter(riwayatList) { hariDipilih ->
             tampilkanDetail(hariDipilih)
         }

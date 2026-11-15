@@ -12,7 +12,6 @@ import com.example.project_mobile_rzky.databinding.ActivityLaporanMingguanBindin
 import com.google.android.material.tabs.TabLayoutMediator
 
 // Laporan Mingguan: TabLayout + ViewPager2 + TabLayoutMediator
-// (Modul P10 hlm 3-8 | prak: TenthActivity.kt)
 class LaporanMingguanActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLaporanMingguanBinding
@@ -28,7 +27,7 @@ class LaporanMingguanActivity : AppCompatActivity() {
             insets
         }
 
-        // Toolbar + tombol back (pola praktikum TenthActivity.kt)
+        // Toolbar + tombol back
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
             title = getString(R.string.laporan_mingguan_judul)
@@ -45,7 +44,7 @@ class LaporanMingguanActivity : AppCompatActivity() {
         val tabsAdapter = LaporanMingguanTabsAdapter(this)
         // 2. Pasang adapter ke ViewPager2
         binding.vpLaporanMingguan.adapter = tabsAdapter
-        // 3. Hubungkan TabLayout dan ViewPager2 (attach SETELAH adapter dipasang)
+        // 3. Hubungkan TabLayout dan ViewPager2
         TabLayoutMediator(binding.tabLaporanMingguan, binding.vpLaporanMingguan) { tab, position ->
             when (position) {
                 0 -> {

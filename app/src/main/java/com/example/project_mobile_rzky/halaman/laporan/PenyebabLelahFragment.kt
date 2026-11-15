@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.project_mobile_rzky.databinding.FragmentPenyebabLelahBinding
 
-// Tab 2 Laporan Mingguan: penyebab lelah terbanyak dengan ListView + Custom Adapter (Modul P7 hlm 16-18)
+// Tab 2 Laporan Mingguan: penyebab lelah terbanyak dengan ListView + Custom Adapter
 class PenyebabLelahFragment : Fragment() {
 
     private var _binding: FragmentPenyebabLelahBinding? = null
@@ -24,7 +24,7 @@ class PenyebabLelahFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // hitung berapa hari setiap penyebab muncul di riwayat (for + when, Modul P2 hlm 7-8)
+        // hitung berapa hari setiap penyebab muncul di riwayat
         var deadline = 0
         var begadang = 0
         var organisasi = 0

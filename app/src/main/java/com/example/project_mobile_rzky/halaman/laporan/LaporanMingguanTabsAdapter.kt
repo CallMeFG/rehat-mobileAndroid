@@ -4,11 +4,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-// adapter tab Laporan Mingguan (Modul P10 hlm 5-6 | prak: TenthTabsAdapter.kt)
+// adapter tab Laporan Mingguan
 class LaporanMingguanTabsAdapter(activity: FragmentActivity) :
     FragmentStateAdapter(activity) {
 
-    // jumlah tab harus sama dengan jumlah case di createFragment (Modul P10 hlm 6)
+    // jumlah tab
     override fun getItemCount(): Int = 2
 
     // Fragment yang ditampilkan berdasarkan posisi tab

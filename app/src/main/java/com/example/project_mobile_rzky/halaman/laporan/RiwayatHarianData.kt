@@ -1,11 +1,6 @@
 package com.example.project_mobile_rzky.halaman.laporan
 
 import android.content.Context
-
-// Sumber data Laporan, dipakai bersama oleh LaporanFragment, RiwayatHarianFragment,
-// PenyebabLelahFragment, dan LaporanMingguanActivity agar isinya selalu sama.
-// Baris "Hari ini" dibaca dari Catatan Harian (SharedPreferences "rehat_data");
-// tujuh hari sebelumnya adalah data contoh karena Rehat belum menyimpan riwayat per tanggal.
 class RiwayatHarianData(private val context: Context) {
 
     fun ambilRiwayat(): List<RiwayatHarianModel> {
@@ -28,7 +23,7 @@ class RiwayatHarianData(private val context: Context) {
             )
         }
 
-        // data contoh 7 hari sebelumnya (terbaru di atas)
+        // data contoh 7 hari sebelumnya
         riwayat.add(RiwayatHarianModel("Sabtu", "14 Nov", 78, "Penuh", "7j 40m", 460, "0–1 tugas", "Tidak ada", "Istirahat penuh, sempat jalan pagi."))
         riwayat.add(RiwayatHarianModel("Jumat", "13 Nov", 58, "Cukup", "6j 10m", 370, "2–3 tugas", "Organisasi", "Rapat himpunan sampai sore."))
         riwayat.add(RiwayatHarianModel("Kamis", "12 Nov", 35, "Rendah", "4j 30m", 270, "4 tugas atau lebih", "Begadang", "Begadang menyelesaikan laporan praktikum."))

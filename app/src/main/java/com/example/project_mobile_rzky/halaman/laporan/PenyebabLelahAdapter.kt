@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.example.project_mobile_rzky.databinding.ItemPenyebabLelahBinding
 
-// Custom Adapter ListView (Modul P7 hlm 17-18 | prak: MessageAdapter.kt)
+// Custom Adapter ListView
 class PenyebabLelahAdapter(
     context: Context,
     private val penyebabList: List<PenyebabLelahModel>

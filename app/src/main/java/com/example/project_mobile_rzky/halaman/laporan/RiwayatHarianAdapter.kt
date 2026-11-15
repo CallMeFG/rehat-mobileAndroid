@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.project_mobile_rzky.databinding.ItemRiwayatHarianBinding
 
-// Adapter RecyclerView riwayat harian (Modul P10 hlm 13-14 | prak: ProductAdapter.kt)
+// Adapter RecyclerView riwayat harian
 class RiwayatHarianAdapter(
     private val riwayatList: List<RiwayatHarianModel>,
     private val onItemClick: (RiwayatHarianModel) -> Unit
