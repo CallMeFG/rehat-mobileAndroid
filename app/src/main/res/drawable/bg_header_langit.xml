@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Header langit malam Rehat (vector path, Modul P9 hlm 11).
+     Bentuk buatan sendiri, bukan Model Wave / Setengah Lingkaran modul:
+     dua lapis gelombang + bulan sabit dan bintang dari logo Rehat.
+
+     Ukuran: View background_header tingginya 190dp, viewport 210 x 100,
+     jadi 1 unit = 1,9dp. Batas yang dijaga:
+     - Toolbar 0-56dp (0-29,5 unit), subtitle selesai sekitar 50dp (26 unit).
+     - Lapis gelap: tepi bawah 35-41 unit (66-78dp), minimal 16dp di bawah subtitle.
+     - Lapis ungu : tepi bawah 45-50 unit (85-95dp), selalu kurang lebih 10 unit di bawah lapis gelap.
+     - tvSapaan mulai 104dp (marginTop 48dp dari Toolbar), di bawah lapis ungu. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="210dp"
+    android:height="100dp"
+    android:viewportWidth="210"
+    android:viewportHeight="100">
+
+    <!-- lapis belakang: gelombang terang (twilight_purple) -->
+    <path
+        android:fillColor="@color/twilight_purple"
+        android:pathData="M0,0 L210,0 L210,48 C182,56 152,42 120,48 C88,54 56,42 26,48 C16,50 8,50 0,49 Z" />
+
+    <!-- lapis depan: langit gelap (midnight_blue), menutup seluruh Toolbar + subtitle -->
+    <path
+        android:fillColor="@color/midnight_blue"
+        android:pathData="M0,0 L210,0 L210,38 C180,46 150,32 120,38 C90,44 60,32 30,38 C18,40 8,40 0,39 Z" />
+
+    <!-- bulan sabit di antara judul Toolbar dan tombol menu -->
+    <path
+        android:fillColor="@color/starlight_yellow"
+        android:pathData="M172,6 A9,9 0 0,0 172,24 A11.5,11.5 0 0,1 172,6 Z" />
+
+    <!-- bintang kecil -->
+    <path
+        android:fillColor="@color/lavender_mist"
+        android:pathData="M150,9 a1.3,1.3 0 1,0 2.6,0 a1.3,1.3 0 1,0 -2.6,0 Z" />
+    <path
+        android:fillColor="@color/lavender_mist"
+        android:pathData="M132,22 a1,1 0 1,0 2,0 a1,1 0 1,0 -2,0 Z" />
+    <path
+        android:fillColor="@color/starlight_yellow"
+        android:pathData="M190,30 a1.1,1.1 0 1,0 2.2,0 a1.1,1.1 0 1,0 -2.2,0 Z" />
+</vector>

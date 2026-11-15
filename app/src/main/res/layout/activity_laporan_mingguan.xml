@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Toolbar + TabLayout + ViewPager2 (Modul P10 hlm 4, 8 | prak: activity_tenth.xml) -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dusk_indigo"
+    tools:context=".halaman.laporan.LaporanMingguanActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/midnight_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="@color/lavender_mist"
+        app:titleTextColor="@color/white" />
+
+    <!-- atribut TabLayout (Modul P10 hlm 8) memakai palet Rehat -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLaporanMingguan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/midnight_blue"
+        app:tabIconTint="@color/starlight_yellow"
+        app:tabIndicatorColor="@color/starlight_yellow"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="4dp"
+        app:tabSelectedTextColor="@color/starlight_yellow"
+        app:tabTextColor="@color/lavender_mist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpLaporanMingguan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLaporanMingguan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

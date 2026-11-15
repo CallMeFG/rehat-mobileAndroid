@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Catatan Harian: CoordinatorLayout + AppBarLayout + Toolbar + NestedScrollView (Modul P5 hlm 4 | prak: activity_lima.xml)
+     Isi form memakai komponen P9: ChipGroup, GridLayout, TextInputLayout, EditText bg_kolom_catatan, MaterialButton -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dusk_indigo"
+    tools:context=".halaman.catatan.CatatanHarianActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/midnight_blue">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/midnight_blue"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:subtitleTextColor="@color/lavender_mist"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- tujuan halaman -->
+            <TextView
+                android:id="@+id/tvTujuanCatatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/catatan_tujuan"
+                android:textColor="@color/lavender_mist"
+                android:textSize="14sp" />
+
+            <!-- Kartu 1: tiga pertanyaan untuk menghitung baterai energi -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPertanyaanEnergi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/lavender_mist"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/twilight_purple"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvLabelTidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:text="@string/catatan_tanya_tidur"
+                        android:textColor="@color/midnight_blue"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupTidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipTidurKurang"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/catatan_tidur_kurang" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipTidurSedang"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/catatan_tidur_sedang" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipTidurCukup"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/catatan_tidur_cukup" />
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <TextView
+                        android:id="@+id/tvLabelTugas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:text="@string/catatan_tanya_tugas"
+                        android:textColor="@color/midnight_blue"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupTugas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipTugasRingan"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/catatan_tugas_ringan" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipTugasSedang"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/catatan_tugas_sedang" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipTugasBerat"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/catatan_tugas_berat" />
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <TextView
+                        android:id="@+id/tvLabelEnergi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:text="@string/catatan_tanya_energi"
+                        android:textColor="@color/midnight_blue"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupEnergi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipEnergiLelah"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/catatan_energi_lelah" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipEnergiBiasa"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/catatan_energi_biasa" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipEnergiSegar"
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/catatan_energi_segar" />
+                    </com.google.android.material.chip.ChipGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Kartu 2: penyebab lelah (GridLayout 3 kolom, 6 tombol) -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardPenyebabLelah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/lavender_mist"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/twilight_purple"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tvLabelPenyebab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/outfit_semibold"
+                        android:text="@string/catatan_tanya_penyebab"
+                        android:textColor="@color/midnight_blue"
+                        android:textSize="16sp" />
+
+                    <androidx.gridlayout.widget.GridLayout
+                        android:id="@+id/gridPenyebabLelah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:columnCount="3"
+                        app:useDefaultMargins="true">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPenyebabDeadline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/penyebab_deadline"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/dusk_indigo"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPenyebabBegadang"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/penyebab_begadang"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/dusk_indigo"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPenyebabOrganisasi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/penyebab_organisasi"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/dusk_indigo"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPenyebabKuliah"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/penyebab_kuliah"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/dusk_indigo"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPenyebabPribadi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/penyebab_pribadi"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/dusk_indigo"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPenyebabTidakAda"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/penyebab_tidak_ada"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/dusk_indigo"
+                            app:layout_columnWeight="1"
+                            app:layout_gravity="fill_horizontal" />
+                    </androidx.gridlayout.widget.GridLayout>
+
+                    <!-- penyebab yang sedang dipilih -->
+                    <TextView
+                        android:id="@+id/tvPenyebabDipilih"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/catatan_penyebab_belum"
+                        android:textColor="@color/twilight_purple"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Kartu 3: tugas terdekat + catatan perasaan -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTugasPerasaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/lavender_mist"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:strokeColor="@color/twilight_purple"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- TextInputLayout + counter (Modul P9 hlm 5-6, latihan 7.1) -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilTugasTerdekat"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/catatan_hint_tugas_terdekat"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="30"
+                        app:helperText="@string/catatan_helper_tugas_terdekat"
+                        app:startIconDrawable="@drawable/ic_tulis_catatan">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etTugasTerdekat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- EditText dengan background bg_kolom_catatan (Modul P9 hlm 10) -->
+                    <EditText
+                        android:id="@+id/etPerasaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_kolom_catatan"
+                        android:hint="@string/catatan_hint_perasaan"
+                        android:inputType="text"
+                        android:textColor="@color/midnight_blue"
+                        android:textColorHint="@color/twilight_purple" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- MaterialButton dengan ikon (Modul P9 hlm 5, 7) -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSimpanCatatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/outfit_semibold"
+                android:text="@string/catatan_btn_simpan"
+                android:textColor="@color/midnight_blue"
+                android:backgroundTint="@color/starlight_yellow"
+                app:icon="@drawable/ic_simpan_catatan"
+                app:iconTint="@color/midnight_blue" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
